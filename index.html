@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="16x16"
+		  href="image/JustStreamItRed.png">
+	<title>JustStreamIt</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header id="top-nav">
+		<img id="Logo" src="image/JustStreamItRed.png" alt="Logo JustStreamIt">
+		<h1>JustStreamIt</h1>
+		<nav id="navigation" class="navigation">
+			 <ul id="menu">
+  				<li><a href="#all-content">Accueil</a></li>
+  				<li><a href="#best_films_cat">Catégories</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="all-content">
+		<div id="best_film" >
+			<h2 class="title_cat">Meilleur Film</h2>
+			<div id="best-film-content" >
+				<div id="info-best-film">
+				</div>
+				<div id="img_best_film">
+				</div>
+			</div>
+		</div>
+		<div class="all_carrousels">
+			<div class="category" id="best_films_cat">
+				<h2 class="title_cat">Films les mieux notés</h2>
+				<div class="caroussel" id="best_films">
+				</div>
+			</div>
+			<div class="category" id="thriller_cat">
+				<h2 class="title_cat">Thriller</h2>
+				<div class="caroussel" id="thriller">
+				</div>
+			</div>
+			<div class="category" id="fiction_cat">
+				<h2 class="title_cat">Fiction</h2>
+				<div class="caroussel" id="fiction">
+				</div>
+			</div>
+			<div class="category" id="biopic_cat">
+				<h2 class="title_cat">Biopic</h2>
+				<div class="caroussel" id="biopic">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+  		<div class="modal-content" id="content">
+  		</div>
+	</div>
+
+	<script src="scripts.js"></script>
+	<div onload="init()"></div>
+</body>
+</html>

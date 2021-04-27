@@ -1,0 +1,197 @@
+@font-face {
+	font-family: Gotham-Black;
+	src: url("/image/fonts/Gotham-Font");
+}
+
+body{
+	font-size: 100%;
+	margin: 0px;
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	color: rgb(229, 9, 20);
+}
+
+h2 {
+	text-align: center;
+	flex: auto;
+	color: #ffffff;
+	letter-spacing: 0.1em;
+	font-size: 3rem;
+}
+
+/* Header */
+#top-nav {
+	background-color: rgb(0, 0, 0);
+	height: 5rem;
+	display: flex;
+	position: fixed;
+	width: 100%;
+}
+
+#Logo
+{
+	height: 80%;
+}
+
+#navigation {
+	width: 72%;
+}
+
+#menu {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.7rem;
+}
+
+
+#navigation li {
+	display: table-cell;
+	width: 10rem;
+	border: solid;
+	border-radius: 0.5rem;
+	text-align: center;
+	background: rgb(229, 9, 20);
+}
+
+#navigation a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/*Body Content*/
+.all-content {
+	width: 100%;
+	margin: 20% auto;
+}
+
+.all_carrousels {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.category{
+	margin: 2rem auto;
+	width: 70%;
+}
+
+.caroussel{
+
+	height: 12rem;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+}
+
+.caroussel-content {
+	height: 12rem;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+
+.fleche{
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 0.3rem;
+}
+
+#best_film {
+	margin-top: 5%;
+	text-align: center;
+}
+
+#title_best_film {
+	margin: 2rem;
+	margin-bottom: 4rem;
+}
+
+#info-best-film {
+	width: 97%;
+}
+
+#best-film-content {
+	display: grid;
+	grid-template-columns: 80% auto;
+	background-color: rgba(111,111,111,0.3);
+	margin: 0 auto;
+	height: 20rem;
+	width: 60%;
+	color: white;
+}
+
+.img_best_film {
+	height: 100%;
+	float: right;
+
+}
+
+#play_best_film {
+	margin-top: 4rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+/* Modal Windows */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71,71,71,0.4);
+}
+
+.modal-content {
+	position: relative;
+	font-size: 1rem;
+	background-color: rgb(111,111,111);
+	margin: 12% auto;
+	padding: 0.1rem;
+	border: 1px solid #888;
+	width: 80%;
+	height: 50%;
+	border-radius: 0.2rem;
+}
+
+#close-button {
+	width: 100%;
+}
+.close {
+	float: right;
+	border-radius: 0.6rem;
+	color: #aaa;
+	font-weight: bold;
+	height: 2rem;
+	width: 2rem;
+}
+
+.close:hover,.close:focus {
+ 	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#modal-info {
+	font-size: 1.5rem;
+	margin: 2rem;
+	overflow : auto;
+	height: 85%;
+	width: 70%;
+
+}
+
+#modal-img {
+	position: absolute;
+	right: 10rem;
+	top: 5rem;
+}
+
+#img_film_modal {
+	height: 200%;
+}

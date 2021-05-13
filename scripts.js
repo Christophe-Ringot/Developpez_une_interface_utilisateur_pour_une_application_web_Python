@@ -1,4 +1,5 @@
-class Carousel{
+class Carousel
+{
     constructor(category, pictures)
     {
         this.category = category

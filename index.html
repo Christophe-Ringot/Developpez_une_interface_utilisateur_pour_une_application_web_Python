@@ -6,63 +6,96 @@
 	<link rel="icon" type="image/png" sizes="16x16"
 		  href="image/JustStreamItRed.png">
 	<title>JustStreamIt</title>
-
 	<link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
-	<header id="top-nav">
-		<img id="Logo" src="image/JustStreamItRed.png"
-			 alt="Logo JustStreamIt">
-		<h1>JustStreamIt</h1>
-		<nav id="navigation" class="navigation">
-			 <ul id="menu">
-  				<li><a href="#all-content">Accueil</a></li>
-  				<li><a href="#best_films_cat">Catégories</a></li>
-			</ul>
-		</nav>
-	</header>
+    <div id="bloc_page">
+        <section>
+            <header>
+                <img id="logo" src="image/JustStreamItRed.png"
+                     alt="Logo JustStreamIt">
+                <h1>JustStreamIt</h1>
+                <nav>
+                    <ul>
+                        <li><a href="">Accueil</a></li>
+                        <li><a href="#best-rated-movies">Catégories</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-	<div id="all-content">
-		<div id="best_film" >
-			<h2 class="title_cat">Meilleur Film</h2>
-			<div id="best-film-content" >
-				<div id="info-best-film">
-				</div>
-				<div id="img_best_film">
-				</div>
-			</div>
-		</div>
-		<div class="all_carrousels">
-			<div class="category" id="best_films_cat">
-				<h2 class="title_cat">Films les mieux notés</h2>
-				<div class="caroussel" id="best_films">
-				</div>
-			</div>
-			<div class="category" id="thriller_cat">
-				<h2 class="title_cat">Thriller</h2>
-				<div class="caroussel" id="thriller">
-				</div>
-			</div>
-			<div class="category" id="fiction_cat">
-				<h2 class="title_cat">Fiction</h2>
-				<div class="caroussel" id="fiction">
-				</div>
-			</div>
-			<div class="category" id="biopic_cat">
-				<h2 class="title_cat">Biopic</h2>
-				<div class="caroussel" id="biopic">
-				</div>
-			</div>
-		</div>
-	</div>
+            <div id="best-movie">
+                <div class="movie-description">
+                    <h2></h2>
+                    <button id="best-movie-player" type="button"
+                            onclick="openModal(modalBestMovie)">Play</button>
+                    <div id="modalBestMovie" class="modal">
+                        <div class="modal-content">
+                        <span class="close"
+                              onclick="closeModal(modalBestMovie)">
+                            &times;</span>
+                            <img class="modal-picture" src="">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="description"></div>
+                </div>
+                <img class="best-movie-picture" src="">
+            </div>
+        </section>
 
-	<div id="myModal" class="modal">
-  		<div class="modal-content" id="content">
-  		</div>
-	</div>
+        <section>
+            <div id="best-rated-movies">
+                <h3 class="row-header">Best Rated Movies</h3>
+                <div class="carousel">
+                    <a class="prev" onclick="carousel1.
+                    moveLeft()">&#10094;</a>
+                    <div class="carousel-movies"></div>
+                    <a class="next" onclick="carousel1.
+                    moveRight()">&#10095;</a>
+                </div>
+            </div>
+        </section>
 
-	<script src="scripts.js"></script>
-	<div onload="init()"></div>
+        <section>
+            <div id="first-category">
+                <h3 class="row-header">Thriller</h3>
+                <div class="carousel">
+                    <a class="prev" onclick="carousel2.
+                    moveLeft()">&#10094;</a>
+                    <div class="carousel-movies"></div>
+                    <a class="next" onclick="carousel2.
+                    moveRight()">&#10095;</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="second-category">
+                <h3 class="row-header">Action</h3>
+                <div class="carousel">
+                    <a class="prev" onclick="carousel3.
+                    moveLeft()">&#10094;</a>
+                    <div class="carousel-movies"></div>
+                    <a class="next" onclick="carousel3.
+                    moveRight()">&#10095;</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="third-category">
+                <h3 class="row-header">Aventure</h3>
+                <div class="carousel">
+                    <a class="prev" onclick="carousel4.
+                    moveLeft()">&#10094;</a>
+                    <div class="carousel-movies"></div>
+                    <a class="next" onclick="carousel4.
+                    moveRight()">&#10095;</a>
+                </div>
+            </div>
+        </section>
+        </div>
+    <script src="scripts.js"></script>
 </body>
 </html>

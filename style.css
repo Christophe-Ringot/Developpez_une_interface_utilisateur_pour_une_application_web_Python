@@ -19,7 +19,7 @@
 
 body {
   color: white;
-  background: black;
+  background: grey;
   font-family: "abelregular", Arial, sans-serif;
 }
 
@@ -42,7 +42,7 @@ header {
 
 header h1 {
   font-size: 3em;
-  color: red;
+  color: rgb(192, 6, 6);
 }
 
 nav {

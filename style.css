@@ -40,11 +40,6 @@ header {
 	height: 70%;
 }
 
-header h1 {
-  font-size: 3em;
-  color: rgb(192, 6, 6);
-}
-
 nav {
   margin-left: 120px;
 }
@@ -54,16 +49,20 @@ ul {
   list-style-type: none;
   display: flex;
 }
+
 ul li {
   margin-right: 70px;
 }
+
 ul li a {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
   padding-right: 30px;
   text-decoration: none;
+  text-align: center;
 }
+
 ul li a:hover {
   color: #c7c7c7;
 }

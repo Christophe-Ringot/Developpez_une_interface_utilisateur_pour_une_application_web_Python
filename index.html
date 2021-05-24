@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/png" sizes="16x16"
-		  href="annexe/JustStreamItRed.png">
+	<link rel="icon" type="image/png" sizes="18x18"
+		  href="annexe/logo.png">
 	<title>JustStreamIt</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -13,12 +13,12 @@
     <div id="bloc_page">
         <section>
             <header>
-                <img id="logo" src="annexe/JustStreamItRed.png"
+                <img id="logo" src="annexe/logo.png"
                      alt="Logo JustStreamIt">
-                <h1>JustStreamIt</h1>
                 <nav>
                     <ul>
-                        <li><a href="">Accueil</a></li>
+                        <li><a>Accueil</a></li>
+                        <li><a>|</a></li>
                         <li><a href="#best-rated-movies">Catégories</a></li>
                     </ul>
                 </nav>
@@ -26,7 +26,7 @@
 
             <div id="best-movie">
                 <div class="movie-description">
-                    <h2></h2>
+                    <h2>meilleur film</h2>
                     <button id="best-movie-player" type="button"
                             onclick="openModal(modalBestMovie)">Play</button>
                     <div id="modalBestMovie" class="modal">
@@ -34,13 +34,15 @@
                         <span class="close"
                               onclick="closeModal(modalBestMovie)">
                             &times;</span>
-                            <img class="modal-picture" src="">
+                            <img class="modal-picture" src=""
+                                 alt="modal picture">
                             <p></p>
                         </div>
                     </div>
                     <div id="description"></div>
                 </div>
-                <img class="best-movie-picture" src="">
+                <img class="best-movie-picture" src=""
+                     alt="best movie picture">
             </div>
         </section>
 
